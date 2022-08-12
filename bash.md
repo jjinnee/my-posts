@@ -51,5 +51,8 @@
     text="one_two_three_four"
     echo "$text" | cut -d '_' -f 2 # Result is "two"
     
-    
-    
+> ### awk
+
+    text="one two three four"
+    echo "$text" | awk '{print $1}' # Result is "one"
+    echo "$text" | awk '{print $NF}' # Result is "four"
